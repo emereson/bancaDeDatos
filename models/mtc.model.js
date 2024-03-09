@@ -15,7 +15,6 @@ const Mtc = db.define('mtc', {
   },
   nombres: {
     type: DataTypes.STRING,
-    unique: true,
     allowNull: false,
   },
   apPaterno: {
