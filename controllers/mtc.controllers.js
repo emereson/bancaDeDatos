@@ -23,12 +23,14 @@ export const findOne = catchAsync(async (req, res) => {
 });
 
 export const create = catchAsync(async (req, res) => {
-  const { dni, licencias } = req.body;
+  const { dni, licencias, apPaterno, apMaterno } = req.body;
   console.log(licencias);
 
   const consultation = await Mtc.create({
     dni,
     licencias,
+    apPaterno,
+    apMaterno,
   });
 
   return res.status(200).json({

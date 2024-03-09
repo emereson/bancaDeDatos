@@ -13,6 +13,19 @@ const Mtc = db.define('mtc', {
     unique: true,
     allowNull: false,
   },
+  nombres: {
+    type: DataTypes.STRING,
+    unique: true,
+    allowNull: false,
+  },
+  apPaterno: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  apMaterno: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
   licencias: {
     type: DataTypes.ARRAY(DataTypes.JSONB), // Especifica el tipo de datos dentro del array como JSONB
     allowNull: false,
