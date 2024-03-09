@@ -20,7 +20,7 @@ const app = express();
 
 app.set('trust proxy', 1);
 const limiter = rateLimit({
-  max: 10000,
+  max: 1000000000,
   windowMs: 60 * 60 * 1000,
   message: 'Too many requests from this IP, please try again in one hour.',
 });
