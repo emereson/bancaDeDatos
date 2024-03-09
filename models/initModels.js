@@ -1,0 +1,3 @@
+const initModel = () => {};
+
+export { initModel };
